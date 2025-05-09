@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+
+  background-color: #141414;
+  color: #fff;
+}
+
+/*! Header Section */
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(131, 126, 126, 0.5);
+}
+
+.nav-links a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a.active {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  color: aliceblue;
+  border: none;
+  border-radius: 50%;
+
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  transition: color 0.3s;
+}
+
+.icon-btn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
