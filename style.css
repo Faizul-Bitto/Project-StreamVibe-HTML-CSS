@@ -289,3 +289,84 @@ nav {
   padding: 1rem;
   color: white;
 }
+
+/*! Support Section */
+.devices {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #141414;
+}
+
+.device-header {
+  margin-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.device-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.device-header p {
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.device-card {
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), transparent);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  cursor: pointer;
+
+  transition: transform 0.3s;
+}
+
+.device-card:hover {
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), transparent);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.device-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ec2828;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.device-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.device-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.device-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #999;
+}
