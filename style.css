@@ -609,3 +609,62 @@ nav {
 .btn-choose:hover {
   background-color: #6e0505;
 }
+
+/*! Free Trial Section */
+.free-trial {
+  width: 74%;
+  margin: 0 auto;
+  padding: 4rem;
+  background-image: url(./images/last.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(131, 126, 126, 0.1);
+}
+
+.free-trial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 1;
+}
+
+.trial-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.trial-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.trial-content p {
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.trial-btn {
+  background-color: #e50000;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.trial-btn:hover {
+  background-color: #6e0505;
+}
