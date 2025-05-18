@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StreamVibe</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -24,19 +27,16 @@
         <div class="logo">
           <img src="./images/logo.png" alt="StreamVibe" />
         </div>
-
         <div class="nav-links">
           <a href="#" class="active">Home</a>
-          <a href="#">Movies & Shows</a>
-          <a href="#">Support</a>
-          <a href="#">Subscription</a>
+          <a href="#movie">Movies & Shows</a>
+          <a href="#support">Support</a>
+          <a href="#subscription">Subscription</a>
         </div>
-
         <div class="nav-icons">
           <button class="icon-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-
           <button class="icon-btn">
             <i class="fa-solid fa-bell"></i>
           </button>
@@ -47,7 +47,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>The Best Streaming Platform</h1>
+        <h1>The Best Streaming Experience</h1>
         <p>
           StreamVibe is the best streaming experience for watching your favorite
           movies and shows on demand, anytime, anywhere. With StreamVibe, you
@@ -56,13 +56,15 @@
           create your own watchlists, so you can easily find the content you
           want to watch.
         </p>
-
-        <button class="start-watching"><span>▶</span>Start Watching Now</button>
+        <button class="start-watching">
+          <span>▶</span>
+          Start Watching Now
+        </button>
       </div>
     </section>
 
-    <!-- Category Section -->
-    <section class="categories">
+    <!-- Categories Section -->
+    <section class="categories" id="movie">
       <div class="categories-header">
         <div>
           <h2>Explore our wide variety of categories</h2>
@@ -76,13 +78,11 @@
           <button class="nav-btn prev">
             <i class="fa-solid fa-chevron-left"></i>
           </button>
-
           <div class="nav-indicator">
             <span class="indicator active"></span>
             <span class="indicator"></span>
             <span class="indicator"></span>
           </div>
-
           <button class="nav-btn next">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
@@ -92,50 +92,47 @@
       <div class="category-grid">
         <div class="category-card">
           <div class="movie-poster">
-            <img src="./images/card1.png" alt="Action Movies" />
+            <img src="./images/card1.png" alt="Action Movie" />
           </div>
           <div class="category-title">
             <h3>Action</h3>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-
         <div class="category-card">
           <div class="movie-poster">
-            <img src="./images/card2.png" alt="Adventure Movies" />
+            <img src="./images/card2.png" alt="Adventure Movie" />
           </div>
           <div class="category-title">
             <h3>Adventure</h3>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-
         <div class="category-card">
           <div class="movie-poster">
-            <img src="./images/card3.png" alt="Comedy Movies" />
+            <img src="./images/card3.png" alt="Comedy Movie" />
           </div>
           <div class="category-title">
             <h3>Comedy</h3>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-
         <div class="category-card">
           <div class="movie-poster">
-            <img src="./images/card4.png" alt="Drama" />
+            <img src="./images/card4.png" alt="Drama Movie" />
           </div>
           <div class="category-title">
             <h3>Drama</h3>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Support Section -->
-    <section class="devices">
-      <div class="device-header">
-        <h2>We Provide you streaming experience across various devices</h2>
+    <section class="devices" id="support">
+      <div class="devices-header">
+        <h2>We Provide you streaming experience across various devices.</h2>
         <p>
           With StreamVibe, you can enjoy your favorite movies and TV shows
           anytime, anywhere. Our platform is designed to be compatible with a
@@ -144,9 +141,11 @@
         </p>
       </div>
 
-      <div class="device-grid">
-        <div class="device-card">
-          <div class="device-icon"><i class="fa-solid fa-mobile"></i></div>
+      <div class="devices-grid">
+        <div class="devices-card">
+          <div class="device-icon">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
           <h3>Smartphones</h3>
           <p>
             StreamVibe is optimized for both Android and iOS smartphones.
@@ -154,26 +153,32 @@
           </p>
         </div>
 
-        <div class="device-card">
-          <div class="device-icon"><i class="fa-solid fa-tablet"></i></div>
-          <h3>Tablets</h3>
+        <div class="devices-card">
+          <div class="device-icon">
+            <i class="fa-solid fa-tablet"></i>
+          </div>
+          <h3>Tablet</h3>
           <p>
             StreamVibe is optimized for both Android and iOS smartphones.
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </div>
 
-        <div class="device-card">
-          <div class="device-icon"><i class="fa-solid fa-tv"></i></div>
-          <h3>Smart TVs</h3>
+        <div class="devices-card">
+          <div class="device-icon">
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <h3>Smart TV</h3>
           <p>
             StreamVibe is optimized for both Android and iOS smartphones.
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </div>
 
-        <div class="device-card">
-          <div class="device-icon"><i class="fa-solid fa-laptop"></i></div>
+        <div class="devices-card">
+          <div class="device-icon">
+            <i class="fa-solid fa-laptop"></i>
+          </div>
           <h3>Laptops</h3>
           <p>
             StreamVibe is optimized for both Android and iOS smartphones.
@@ -181,7 +186,7 @@
           </p>
         </div>
 
-        <div class="device-card">
+        <div class="devices-card">
           <div class="device-icon">
             <i class="fa-solid fa-gamepad"></i>
           </div>
@@ -192,7 +197,7 @@
           </p>
         </div>
 
-        <div class="device-card">
+        <div class="devices-card">
           <div class="device-icon">
             <i class="fa-solid fa-vr-cardboard"></i>
           </div>
@@ -215,7 +220,6 @@
             answers to the most common questions about StreamVibe.
           </p>
         </div>
-
         <button class="ask-question">Ask a Question</button>
       </div>
 
@@ -227,7 +231,7 @@
             <i class="fa-solid fa-plus"></i>
           </div>
 
-          <div class="faq-answer">
+          <div class="faq-ans">
             <p>
               StreamVibe is a streaming service that allows you to watch movies
               and shows on demand.
@@ -242,7 +246,7 @@
             <i class="fa-solid fa-plus"></i>
           </div>
 
-          <div class="faq-answer">
+          <div class="faq-ans">
             <p>
               StreamVibe is a streaming service that allows you to watch movies
               and shows on demand.
@@ -257,7 +261,7 @@
             <i class="fa-solid fa-plus"></i>
           </div>
 
-          <div class="faq-answer">
+          <div class="faq-ans">
             <p>
               StreamVibe is a streaming service that allows you to watch movies
               and shows on demand.
@@ -272,7 +276,7 @@
             <i class="fa-solid fa-plus"></i>
           </div>
 
-          <div class="faq-answer">
+          <div class="faq-ans">
             <p>
               StreamVibe is a streaming service that allows you to watch movies
               and shows on demand.
@@ -283,7 +287,7 @@
     </section>
 
     <!-- Subscription Section -->
-    <section class="subscription">
+    <section class="subscription" id="subscription">
       <div class="subscription-header">
         <h2>Choose the plan that's right for you</h2>
         <p>
@@ -291,7 +295,6 @@
           tailored to suit your viewing preferences. Get ready for non-stop
           entertainment!
         </p>
-
         <div class="plan-btn">
           <button class="toggle-btn active">Monthly</button>
           <button class="toggle-btn">Yearly</button>
@@ -313,7 +316,6 @@
               <span class="period">/month</span>
             </div>
           </div>
-
           <div class="plan-button">
             <button class="btn-trial">Start Free Trial</button>
             <button class="btn-choose">Choose Plan</button>
@@ -334,7 +336,6 @@
               <span class="period">/month</span>
             </div>
           </div>
-
           <div class="plan-button">
             <button class="btn-trial">Start Free Trial</button>
             <button class="btn-choose">Choose Plan</button>
@@ -355,7 +356,6 @@
               <span class="period">/month</span>
             </div>
           </div>
-
           <div class="plan-button">
             <button class="btn-trial">Start Free Trial</button>
             <button class="btn-choose">Choose Plan</button>
@@ -364,16 +364,15 @@
       </div>
     </section>
 
-    <!-- Free Trial Section -->
-    <section class="free-trial">
+    <!-- Free Trail Section -->
+    <section class="free-trail">
       <div class="trial-content">
-        <h2>Start your free trial</h2>
+        <h2>Start your free trial today!</h2>
         <p>
           This is a clear and concise call to action that encourages users to
           sign up for a free trial of StreamVibe.
         </p>
-
-        <button class="trial-btn">Start a Free Trial</button>
+        <button class="trail-btn">Start a Free Trail</button>
       </div>
     </section>
 
@@ -427,10 +426,9 @@
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; 2025 StreamVibe. All rights reserved.</p>
-
+          <p>©2025 streamvibe. All Rights Reserved</p>
           <div class="footer-legal">
-            <a href="#">Terms of Service</a>
+            <a href="#">Terms of Use</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Cookie Policy</a>
           </div>
